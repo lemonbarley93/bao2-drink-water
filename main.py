@@ -1,5 +1,4 @@
 import telegram
-import time
 import telebot
 import schedule
 from config import BOT_TOKEN, API_KEY,IDS_ALLOWED
@@ -17,4 +16,3 @@ schedule.every(20).seconds.do(send_message)
 
 while True:
 	schedule.run_pending()
-	time.sleep(10)
